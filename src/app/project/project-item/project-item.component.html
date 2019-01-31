@@ -1,0 +1,15 @@
+<nz-card [nzTitle]="item.title" [nzCover]="coverTemplate" [nzActions]=[actionSetting,actionEdit,actionEllipsis]>
+  {{item.desc}}
+</nz-card>
+<ng-template #coverTemplate>
+  <img alt="exemple" src="{{item.img}}">
+</ng-template>
+<ng-template #actionSetting>
+  <i nz-icon type="setting"></i>
+</ng-template>
+<ng-template #actionEdit>
+  <i nz-icon type="edit"></i>
+</ng-template>
+<ng-template #actionEllipsis>
+  <i nz-icon type="ellipsis"></i>
+</ng-template>

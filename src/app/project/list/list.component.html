@@ -1,0 +1,9 @@
+<div>
+<button class="my-button" nzType="primary" nzShape="circle" [nzSize]="large" (click)="new()" nz-button >
+  <i nz-icon type="plus" theme="outline"></i></button>
+</div>
+<div nz-row>
+  <div nz-col [nzSpan]="6" *ngFor="let project of projects">
+    <app-project-item [item]="project"></app-project-item>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="my-border" nz-row nzType="flex" nzJustify="space-around" nzAlign="middle">
+  <div nz-col nzSpan="4">
+    <label nz-checkbox [(ngModel)]="checked"></label>
+  </div>
+  <div nz-col nzSpan="16">
+    <p>{{item?.desc || '--'}}</p>
+    <span>{{item?.dueDate | date:'yyyy-MM-dd'}}</span>
+  </div>
+  <div nz-col nzSpan="4">
+    <nz-avatar nzIcon="user" nzSrc="//zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"></nz-avatar>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="container">
+  <app-task-list class="item" *ngFor="let list of lists">
+    <app-task-header [header]="list.name"></app-task-header>
+    <div *ngFor="let task of list.tasks">
+      <app-task-item [item]="task"></app-task-item>
+    </div>
+  </app-task-list>
+</div>
+<button class="my-button" nzType="primary" nzShape="circle" [nzSize]="large" nz-button>
+  <i nz-icon type="plus" theme="outline"></i></button>
+
